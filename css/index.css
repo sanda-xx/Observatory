@@ -1,0 +1,44 @@
+@charset "UTF-8";
+.Web-Index{
+	Width: 1200px;
+	height: 800px;
+	background-color: white;
+}
+.Index-Title{
+	Width: 100%;
+	height: 20%;
+	border:solid 1px;
+
+}
+.Index-Body{
+	Width: 100%;
+	height: 80%;
+	border-right:solid 1px;
+	border-left:solid 1px;
+	border-bottom:solid 1px;
+}
+.Body-Menu{
+	Width: 20%;
+	height: 100%;
+	border-right:solid 1px;
+	float:left;
+}
+.Body-News{
+	Width: 79%;
+	height: 100%;
+	float:left
+}
+.Menu-Top{
+	Width: 100%;
+	height: 6%;
+	border-bottomt:solid 1px;
+	background-color: black;
+	font-size: 32px;
+	text-align:center;
+	color:white;
+}
+.Menu-Button{
+	Width: 100%;
+	height: 18.8%;
+	border-bottom:solid 1px;
+}

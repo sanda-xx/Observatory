@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Draw Tool</title>
+	<style>
+      #canvas {
+        background: #FFFFFF;
+        border : solid 1px #000000;
+      }
+    </style>
+</head>
+<body>
+<h1>お絵描きツール</h1>
+<a href="./index.html"><h2>戻る</h2></a>
+<canvas id="canvas" width="640" height="480"></canvas>
+    <script>
+      var canvas = document.getElementById("canvas");
+      var context = canvas.getContext('2d');
+	  var size = 5;
+      context.fillStyle = "black";
+	  var x;
+	  var y;
+	  var drawMode = 0;
+		//プルダウン
+		function DrawOn(e) {
+			drawMode = 1;
+		}
+		//プルアップ
+		function DrawOff(e) {
+			drawMode = 0;
+		}
+
+		//マウス移動
+    	function onMove(e) {
+    		if (drawMode == 1){
+  			  x = e.clientX - canvas.offsetLeft;
+			  y = e.clientY - canvas.offsetTop;
+		      draw(x,y);
+    		}
+
+    	}
+		//描画
+		function draw(x, y) {
+			  var context = canvas.getContext('2d');
+			  context.fillRect(x, y, size, size);
+		}
+    	canvas.addEventListener('mousedown',DrawOn, false);
+    	canvas.addEventListener('mouseup', DrawOff, false);
+    	canvas.addEventListener('mousemove', onMove, false);
+
+    </script>
+</body>
+</html>

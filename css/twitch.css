@@ -1,0 +1,43 @@
+@charset "UTF-8";
+.StreamImage{
+	display: inline-block; 
+	margin-right: 10px;
+	margin-top: 10px;
+	position: relative;/*相対配置*/
+}
+
+.StreamImage p1 {
+  position: absolute;/*絶対配置*/
+  color: white;/*文字は白に*/
+  top: 0;
+  left: 0;
+  }
+  .StreamImage p2 {
+  position: absolute;/*絶対配置*/
+  color: white;/*文字は白に*/
+  top: 0;
+  left: 180px;
+  }
+  .StreamImage p3 {
+  position: absolute;/*絶対配置*/
+  color: white;/*文字は白に*/
+  top: 30px;
+  left: 0;
+  /*background-color: rgba(255,255,255,0.5);*/
+  }
+  #View-Area{
+   
+  }
+  .Web-Partition{
+  	white-space: pre;
+	background-color: rgb(64,64,255);
+	height 10px;
+   }
+  .Web-body{
+  	height: 800px;
+  	/*シマシマ背景*/
+	background-color: #ECECEC;
+	background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #F9F9F9), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, 	#F9F9F9),color-stop(.75, #F9F9F9), color-stop(.75, transparent),to(transparent));
+	-webkit-background-size: 7px 7px;
+   }
+
